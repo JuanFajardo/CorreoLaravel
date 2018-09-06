@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('Correo', 'ControllerCorreo');
+Route::get('Correo/reporte/{id}', 'ControllerCorreo@reporte');
